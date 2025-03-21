@@ -62,7 +62,7 @@ Then go to dashboards and click new pannel or visualization and add the followin
 
 #### For CPU usage
 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
-#### For Memory usagw
+#### For Memory usage
 (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100
 #### For Disk usage
 100 - ((node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) * 100)
